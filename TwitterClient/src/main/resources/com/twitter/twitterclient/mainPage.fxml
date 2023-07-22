@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="657.0" prefWidth="744.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainPageController">
+
+   <VBox prefHeight="657.0" prefWidth="744.0">
+      <ToolBar prefHeight="85.0" prefWidth="744.0">
+         <HBox prefHeight="50.0" prefWidth="730.0">
+            <children>
+               <ImageView fitHeight="70.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@main.jpg" />
+                  </image>
+               </ImageView>
+               <Label prefHeight="17.0" prefWidth="104.0" text="TimeLine">
+                  <padding>
+                     <Insets left="2.0" />
+                  </padding>
+                  <font>
+                     <Font name="B Davat" size="15.0" />
+                  </font>
+                  <HBox.margin>
+                     <Insets top="11.0" />
+                  </HBox.margin>
+               </Label>
+               <Circle fx:id="myCircle" fill="DODGERBLUE" radius="29.0" stroke="BLACK" strokeType="INSIDE">
+                  <HBox.margin>
+                     <Insets left="550.0" />
+                  </HBox.margin>
+               </Circle>
+            </children>
+         </HBox>
+      </ToolBar>
+
+      <VBox prefHeight="536.0" prefWidth="744.0">
+         <ListView fx:id="tweetListView" prefHeight="536.0" prefWidth="744.0" />
+
+      </VBox>
+
+      <ToolBar prefHeight="82.0" prefWidth="744.0">
+         <HBox prefHeight="78.0" prefWidth="686.0">
+            <children>
+               <ImageView fitHeight="72.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@Home2.jpg" />
+                  </image>
+                  <HBox.margin>
+                     <Insets left="35.0" top="10.0" />
+                  </HBox.margin>
+               </ImageView>
+               <ImageView fx:id="addTweet" fitHeight="77.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@tweetMAINicon.jpg" />
+                  </image>
+                  <HBox.margin>
+                     <Insets left="230.0" top="12.0" />
+                  </HBox.margin>
+               </ImageView>
+               <ImageView fx:id="searchField" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@search.jpg" />
+                  </image>
+                  <HBox.margin>
+                     <Insets left="230.0" top="27.0" />
+                  </HBox.margin>
+               </ImageView>
+            </children>
+         </HBox>
+      </ToolBar>
+   </VBox>
+</AnchorPane>

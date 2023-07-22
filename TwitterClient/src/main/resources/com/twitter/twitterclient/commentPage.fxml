@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="657.0" prefWidth="744.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CommentPageController">
+   <children>
+      <VBox prefHeight="657.0" prefWidth="744.0">
+         <children>
+            <ToolBar prefHeight="57.0" prefWidth="744.0">
+               <items>
+                  <HBox prefHeight="21.0" prefWidth="688.0">
+                     <children>
+                        <ImageView fx:id="backImage" fitHeight="70.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@back.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="17.0" prefWidth="104.0" text="Comments">
+                           <padding>
+                              <Insets left="2.0" />
+                           </padding>
+                           <font>
+                              <Font name="B Davat" size="15.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets top="14.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+               </items>
+            </ToolBar>
+            <VBox prefHeight="598.0" prefWidth="744.0">
+               <children>
+                  <ListView fx:id="commentsListView" prefHeight="606.0" prefWidth="749.0" />
+               </children></VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

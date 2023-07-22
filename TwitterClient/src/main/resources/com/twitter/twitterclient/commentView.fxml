@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+
+<AnchorPane prefHeight="160.0" prefWidth="744.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CommentViewController">
+   <children>
+      <VBox prefHeight="156.0" prefWidth="744.0">
+         <children>
+            <HBox prefHeight="76.0" prefWidth="744.0">
+               <children>
+                  <HBox prefHeight="62.0" prefWidth="83.0">
+                     <children>
+                        <Circle fx:id="myCircle" fill="DODGERBLUE" radius="27.0" stroke="BLACK" strokeType="INSIDE">
+                           <HBox.margin>
+                              <Insets left="10.0" top="7.0" />
+                           </HBox.margin>
+                        </Circle>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="HBoxForOpenComment" prefHeight="62.0" prefWidth="539.0">
+                     <children>
+                        <Label fx:id="userNameTextLabel" text="UserName">
+                           <padding>
+                              <Insets left="25.0" top="23.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets left="75.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="tweetTime" text="time">
+                           <padding>
+                              <Insets left="25.0" top="23.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets left="75.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0" prefHeight="85.0" prefWidth="744.0">
+               <children>
+                  <Label fx:id="tweetTextLabel" prefHeight="98.0" prefWidth="742.0" text="Label">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="23.0" />
+                     </padding></Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="657.0" prefWidth="744.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SearchController">
+   <children>
+      <VBox prefHeight="657.0" prefWidth="744.0">
+         <children>
+            <ToolBar prefHeight="50.0" prefWidth="744.0">
+               <items>
+                  <HBox prefHeight="21.0" prefWidth="688.0">
+                     <children>
+                        <ImageView fitHeight="70.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@KhodeTwitter.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="17.0" prefWidth="104.0" text="Search">
+                           <padding>
+                              <Insets left="2.0" />
+                           </padding>
+                           <font>
+                              <Font name="B Davat" size="15.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets top="14.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+               </items>
+            </ToolBar>
+            <HBox prefHeight="113.0" prefWidth="744.0">
+               <children>
+                  <ImageView fx:id="searchImage" fitHeight="47.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@search.jpg" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="38.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <TextField fx:id="searchField" prefHeight="42.0" prefWidth="689.0">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <ListView fx:id="tweetListView" prefHeight="390.0" prefWidth="744.0" />
+            <ListView fx:id="userListView" prefHeight="387.0" prefWidth="744.0" />
+            <ToolBar prefHeight="82.0" prefWidth="744.0">
+               <items>
+                  <HBox prefHeight="65.0" prefWidth="646.0">
+                     <children>
+                        <ImageView fx:id="mainPageField" fitHeight="72.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Home.jpg" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="60.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fx:id="tweetPageField" fitHeight="74.0" fitWidth="77.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@writeTTTT.jpg" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="200.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@search.jpg" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="200.0" top="15.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                     <padding>
+                        <Insets bottom="7.0" />
+                     </padding>
+                  </HBox>
+               </items>
+            </ToolBar>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

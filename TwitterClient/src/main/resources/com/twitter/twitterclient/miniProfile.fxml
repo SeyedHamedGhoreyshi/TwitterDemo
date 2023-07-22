@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="124.0" prefWidth="754.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MiniProfileController">
+   <children>
+      <VBox fx:id="vbox" layoutX="10.0" layoutY="10.0" prefHeight="127.0" prefWidth="744.0">
+         <children>
+            <HBox prefHeight="76.0" prefWidth="744.0">
+               <children>
+                  <HBox prefHeight="62.0" prefWidth="83.0">
+                     <children>
+                        <Circle fx:id="myCircle" fill="DODGERBLUE" radius="27.0" stroke="BLACK" strokeType="INSIDE">
+                           <HBox.margin>
+                              <Insets left="10.0" top="7.0" />
+                           </HBox.margin>
+                        </Circle>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="62.0" prefWidth="539.0">
+                     <children>
+                        <Label fx:id="userNameLabel" text="UserName">
+                           <padding>
+                              <Insets left="25.0" top="23.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets left="75.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0" prefHeight="101.0" prefWidth="744.0">
+               <children>
+                  <Label fx:id="bioLabel" prefHeight="60.0" prefWidth="718.0" text="Label">
+                     <HBox.margin>
+                        <Insets bottom="-15.0" left="25.0" top="6.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="25.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

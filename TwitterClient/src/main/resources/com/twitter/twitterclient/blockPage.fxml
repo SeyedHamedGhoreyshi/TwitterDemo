@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="111.0" prefWidth="636.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BlockPageController">
+   <children>
+      <VBox prefHeight="127.0" prefWidth="634.0">
+         <children>
+            <ToolBar prefHeight="45.0" prefWidth="634.0">
+               <items>
+                  <HBox prefHeight="18.0" prefWidth="570.0">
+                     <children>
+                        <ImageView fx:id="backImage" fitHeight="32.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../back.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="17.0" prefWidth="104.0" text="Back">
+                           <padding>
+                              <Insets left="2.0" />
+                           </padding>
+                           <font>
+                              <Font name="B Davat" size="15.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets top="6.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+               </items>
+            </ToolBar>
+            <Label prefHeight="42.0" prefWidth="399.0" text="Sorry, you are blocked by this user !">
+               <VBox.margin>
+                  <Insets left="155.0" top="25.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="15.0" />
+               </padding>
+               <font>
+                  <Font name="Bell MT Bold" size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

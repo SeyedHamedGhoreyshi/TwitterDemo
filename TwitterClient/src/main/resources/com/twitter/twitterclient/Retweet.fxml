@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="101.0" prefWidth="166.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RetweetController">
+   <children>
+      <VBox prefHeight="101.0" prefWidth="177.0">
+         <children>
+            <ToolBar fx:id="retweetBTN" prefHeight="75.0" prefWidth="200.0">
+               <items>
+                  <Label text="Retweet" />
+                  <Label fx:id="errorLabel" prefHeight="18.0" prefWidth="90.0">
+                     <padding>
+                        <Insets left="15.0" />
+                     </padding>
+                  </Label>
+               </items>
+            </ToolBar>
+            <ToolBar fx:id="quoteBTN" prefHeight="74.0" prefWidth="200.0">
+               <items>
+                  <Label fx:id="QuoteIcon" text="Quote">
+                     <padding>
+                        <Insets bottom="5.0" left="2.0" />
+                     </padding>
+                  </Label>
+               </items>
+            </ToolBar>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
